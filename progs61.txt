@@ -1,0 +1,73 @@
+import java.util.Scanner;
+interface vechicle{
+ void getColor(String c);
+ void getNumber(int num);
+ double getConsumption(float totalDistance,float average);
+
+}
+ class TwoWheeler implements vehicle{
+ String Color;
+ int Number;
+ public void getColor( String c){
+ Color=c;
+} 
+public void getNumber(int num){
+Number=num;
+}
+ public double getConsumption(float totalDistance,float average){
+ return (totalDistance/average);
+}
+ public void showDetails(){
+System.out.println("Number : " +Number);
+System.out.println("Color : " +Color);
+
+}
+}
+
+class FourWheeler implements vehicle{
+ String Color;
+ int Number;
+ public void getColor( String c){
+ Color=c;
+} 
+public void getNumber(int num){
+Number=num;
+}
+ public double getConsumption(float totalDistance,float average){
+ return (totalDistance/average);
+}
+ public void showDetails(){
+System.out.println("Number : " +Number);
+System.out.println("Color : " +Color);
+
+}
+}
+class progs61{
+public static void main(String args[]){
+Scanner s= new Scanner(System.in);
+TwoWheeler obj = new Scanner();
+System.out.println("two wheeler vehicle");
+System.out.println("Color : ");
+String Color= in.nextLine();
+obj.getColor(Color);
+System.out.println("Number : ");
+int num=in.nextInt();
+obj.getNumber(num);
+System.out.println("total distance travelled (in km) : ");
+float distance = in.nextFloat();
+System.out.println("Average of vehicle(in km/hr) : ");
+float average = in.nextFloat();
+System.out.println("vehicle information ");
+obj.showdetails
+double fuelconsumed = obj.getConsumption(distance,average);
+System.out.println("fuel consumed (in litre): " +fuelconsumed);
+
+
+}
+
+
+
+}
+
+
+
